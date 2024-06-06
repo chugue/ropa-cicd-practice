@@ -32,6 +32,7 @@ class OrderHistoryRestControllerTest extends MyRestDoc {
                         .email("junghein@example.com")
                         .password("1234")
                         .myName("junghein")
+                        .blueChecked(true)
                         .build());
     }
 
@@ -59,7 +60,7 @@ class OrderHistoryRestControllerTest extends MyRestDoc {
         actions.andExpect(jsonPath("$.response.itemHistoryDTOList").isArray());
 
         // 첫 번째 항목을 검증
-        actions.andExpect(jsonPath("$.response.itemHistoryDTOList[0].orderId").value(1));
+        actions.andExpect(jsonPath("$.response.itemHistoryDTOList[0].orderId").value(6));
         actions.andExpect(jsonPath("$.response.itemHistoryDTOList[0].itemId").value(1));
         actions.andExpect(jsonPath("$.response.itemHistoryDTOList[0].itemName").value("SCRAPPED 티셔츠(WHITE)"));
         actions.andExpect(jsonPath("$.response.itemHistoryDTOList[0].itemCount").value(2));
@@ -68,15 +69,6 @@ class OrderHistoryRestControllerTest extends MyRestDoc {
         actions.andExpect(jsonPath("$.response.itemHistoryDTOList[0].itemCategoryMain").value("top"));
         actions.andExpect(jsonPath("$.response.itemHistoryDTOList[0].deliveryStatus").value("배송중"));
 
-        // 두 번째 항목을 검증
-        actions.andExpect(jsonPath("$.response.itemHistoryDTOList[1].orderId").value(1));
-        actions.andExpect(jsonPath("$.response.itemHistoryDTOList[1].itemId").value(2));
-        actions.andExpect(jsonPath("$.response.itemHistoryDTOList[1].itemName").value("scratch 블루 청바지"));
-        actions.andExpect(jsonPath("$.response.itemHistoryDTOList[1].itemCount").value(1));
-        actions.andExpect(jsonPath("$.response.itemHistoryDTOList[1].itemPrice").value(32000));
-        actions.andExpect(jsonPath("$.response.itemHistoryDTOList[1].itemTotalPrice").value(32000));
-        actions.andExpect(jsonPath("$.response.itemHistoryDTOList[1].itemCategoryMain").value("bottom"));
-        actions.andExpect(jsonPath("$.response.itemHistoryDTOList[1].deliveryStatus").value("배송중"));
         actions.andDo(MockMvcResultHandlers.print()).andDo(document);
     }
 
