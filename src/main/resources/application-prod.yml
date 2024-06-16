@@ -11,7 +11,7 @@ server:
 spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://${RDS_HOST}:3306/ropadb # DB인스턴스 식별자 여기에
+    url: jdbc:mysql://${RDS_HOST}/ropadb # DB인스턴스 식별자 여기에
     username: ropa # 마스터 사용자 이름
     password: ropa1234 # 마스터 사용자 암호
   jpa:
