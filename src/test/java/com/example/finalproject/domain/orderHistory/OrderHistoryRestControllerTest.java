@@ -32,7 +32,6 @@ class OrderHistoryRestControllerTest extends MyRestDoc {
                         .email("junghein@example.com")
                         .password("1234")
                         .myName("junghein")
-                        .blueChecked(true)
                         .build());
     }
 

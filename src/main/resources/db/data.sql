@@ -59,6 +59,7 @@ VALUES ('top', '반팔'),
        ('bottom', '슬랙스'),
        ('top', '라운드 니트'),
        ('bottom', '슬랙스'),
+
        ('top', '반팔'),
        ('bottom', '슬랙스');
 
@@ -82,6 +83,7 @@ VALUES (1, 'SCRAPPED 티셔츠(WHITE)', '힙하고 유니크한 반팔로 어느
        (1, '핀턱 와이드 슬랙스 팬츠', '핀턱이 잡혀있고 재질이 얇아 여름에 입기 좋은 상품입니다.', 'L', 50000, 0, 200, 15, true),
        (2, '긴팔 라운드 니트', '간절기에 입기 좋은 재질로 구성됐습니다.', 'L', 50000, 0, 100, 16, true),
        (2, '다리가 길어보이는 투턱 세미 와이드 슬랙스 팬츠', '다리가 길어보이는 투턱 세미 와이드 팬츠로 어느룩에든 잘 어울립니다.', 'L', 75000, 0, 50, 17, true),
+
        (4, '린넨 쿨링 3버튼 카라 반팔', '시원한 린넨 쿨링 3버튼 카라 반팔, 여름에 딱!', 'M', 29000, 0, 100, 18, true),
        (4, '[비침 X] 2TYPE 린넨 쿨링 밴딩 팬츠', '비침 없는 쿨링 린넨 팬츠, 여름 필수템!', 'M', 35000, 0, 100, 19, true);
 
@@ -165,6 +167,7 @@ values ('uuid_브랜드사진1', 'salomon', '/upload/brand/salomon.jpg', 'BRAND'
        ('uuid_사용자사진8', '사용자사진8', '/upload/user/user8.webp', 'USER', null, 8, null, null, NOW(), true),
        ('uuid_사용자사진9', '사용자사진9', '/upload/user/user9.webp', 'USER', null, 9, null, null, NOW(), true),
        ('uuid_사용자사진10', '사용자사진10', '/upload/user/user10.webp', 'USER', null, 10, null, null, NOW(), true),
+
 -- 코디 수정 (user_id)
        ('uuid_코디사진1', '코디사진1', '/upload/codi/user-03-codi01.webp', 'CODI', null, null, 1, null, NOW(), true),
        ('uuid_코디사진1서브', '코디사진1서브', '/upload/codi/user-03-codi01-detail.webp', 'CODI', null, null, 1, null, NOW(), false),
@@ -212,6 +215,7 @@ values ('uuid_브랜드사진1', 'salomon', '/upload/brand/salomon.jpg', 'BRAND'
        ('uuid_코디사진20서브', '코디사진20서브', '/upload/codi/user-09-codi04-detail.jpg', 'CODI', null, null, 20, null, NOW(), false),
        ('uuid_코디사진21', '코디사진21', '/upload/codi/user-09-codi05.jpg', 'CODI', null, null, 21, null, NOW(), true),
        ('uuid_코디사진21서브', '코디사진21서브', '/upload/codi/user-09-codi05-detail.jpg', 'CODI', null, null, 21, null, NOW(), false),
+
        ('uuid_아이템사진1', '아이템사진1', '/upload/items/item01/mainItemPhoto.jpg', 'ITEM', null, null, null, 1, NOW(), true),
        ('uuid_아이템사진1서브', '아이템서브사진1', '/upload/items/item01/detail01.jpg', 'ITEM', null, null, null, 1, NOW(), false),
        ('uuid_아이템사진2', '아이템사진2', '/upload/items/item02/mainItemPhoto.jpg', 'ITEM', null, null, null, 2, NOW(), true),
@@ -324,5 +328,3 @@ VALUES (1, 1, 1, 2, 90000, 9000),
        (1, 4, 8, 1, 32000, 3200),
        (2, 5, 9, 1, 75000, 7500),
        (2, 5, 10, 1, 50000, 5000);
-
-
